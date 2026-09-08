@@ -18,7 +18,7 @@ Build a frontend application that simulates a truck moving through delivery loca
 ## Architecture & Approach
 
 ### 1. Single source of truth for animation state
-`hooks/useTruckAnimation.js` is a custom hook that owns **one combined state object**: `{ currentStopIndex, progress }`.//
+`hooks/useTruckAnimation.js` is a custom hook that owns **one combined state object**: `{ currentStopIndex, progress }`.
 
 - `currentStopIndex` — which leg of the journey the truck is currently on (0 = Origin→D1, 1 = D1→D2, 2 = D2→D3). Once it reaches 3, the truck has arrived at the final stop.
 - `progress` — a value from 0 to 1 representing how far along the *current* leg the truck has travelled.
@@ -54,12 +54,12 @@ The map is built with plain SVG:
 - **Next stop** — the next stop's label, or "Arrived" once at the final stop
 - **Completed stops** — `currentStopIndex / 3`
 
-No separate state is kept for any of these — they're recalculated from `currentStopIndex`/`progress`/`legDistances` every time the component re-renders, which is standard React practice for derived values (no `useEffect` needed, since this isn't a side effect).
+No separate state is kept for any of these — they're recalculated from `currentStopIndex`/`progress`/`legDistances` every time the component re-renders
 
 ### 6. Responsive layout
 - On small screens: the status panel sits as a normal block below the map (stacked layout)
 - On larger screens (`lg:` breakpoint and up): the status panel becomes an absolutely-positioned overlay in the map's bottom-right corner, matching the assignment's reference mockup layout
-- Handled entirely with Tailwind's responsive utility classes — no JavaScript/conditional rendering needed
+- Handled entirely with Tailwind's responsive utility classes
 
 ## Features
 - Animated truck marker moving Origin → D1 → D2 → D3
