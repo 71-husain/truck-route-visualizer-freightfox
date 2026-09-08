@@ -11,7 +11,7 @@ Build a frontend application that simulates a truck moving through delivery loca
 
 ## Key Assumptions
 
-- **The "map" is a stylized, custom-built visualization — not a real-world geographic map.** The assignment's own reference mockup shows a plain grid background with abstract point placement, explicitly labeled "Mock map." Based on that, coordinates for Origin/D1/D2/D3 are arbitrary percentage-based (x, y) positions on a 0–100 grid — not real latitude/longitude. This was a deliberate choice: it matches what was actually shown in the brief, avoids unnecessary dependency on a third-party maps API (and any associated API key/billing setup), and keeps the focus on the skills actually being tested — state management, animation, and component design — rather than map-library configuration.
+- **The "map" is a stylized, custom-built visualization — not a real-world geographic map
 - **Distances (in km) between stops are mock/sample values**, defined in the simulated API response, used purely to demonstrate the "distance covered" calculation logic.
 - **The truck moves at a constant, fixed animation speed** (not based on real-world time/speed) — chosen for a smooth, predictable, easily-demoable animation within a short assignment window.
 
