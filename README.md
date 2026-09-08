@@ -11,7 +11,7 @@ Build a frontend application that simulates a truck moving through delivery loca
 
 ## Key Assumptions
 
-- **The "map" is a stylized, custom-built visualization — not a real-world geographic map
+- **The "map" is a stylized, custom-built visualization — not a real-world geographic map **
 - **Distances (in km) between stops are mock/sample values**, defined in the simulated API response, used purely to demonstrate the "distance covered" calculation logic.
 - **The truck moves at a constant, fixed animation speed** (not based on real-world time/speed) — chosen for a smooth, predictable, easily-demoable animation within a short assignment window.
 
